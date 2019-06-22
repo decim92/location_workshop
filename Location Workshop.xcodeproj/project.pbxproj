@@ -15,7 +15,7 @@
 		A59888FA22B549A800CB3354 /* LocationAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59888F922B549A800CB3354 /* LocationAPI.swift */; };
 		A59888FD22B54B0300CB3354 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59888FC22B54B0300CB3354 /* Constants.swift */; };
 		A5A6D88B22B53B1400948AB5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A6D88A22B53B1400948AB5 /* AppDelegate.swift */; };
-		A5A6D88D22B53B1400948AB5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A6D88C22B53B1400948AB5 /* ViewController.swift */; };
+		A5A6D88D22B53B1400948AB5 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A6D88C22B53B1400948AB5 /* MapViewController.swift */; };
 		A5A6D89022B53B1400948AB5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5A6D88E22B53B1400948AB5 /* Main.storyboard */; };
 		A5A6D89222B53B1600948AB5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5A6D89122B53B1600948AB5 /* Assets.xcassets */; };
 		A5A6D89522B53B1600948AB5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5A6D89322B53B1600948AB5 /* LaunchScreen.storyboard */; };
@@ -56,7 +56,7 @@
 		A59888FC22B54B0300CB3354 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		A5A6D88722B53B1400948AB5 /* Location Workshop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Location Workshop.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5A6D88A22B53B1400948AB5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A5A6D88C22B53B1400948AB5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A5A6D88C22B53B1400948AB5 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		A5A6D88F22B53B1400948AB5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A5A6D89122B53B1600948AB5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A5A6D89422B53B1600948AB5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -186,7 +186,7 @@
 				A59888F522B5437700CB3354 /* Models */,
 				A59888EF22B53F4900CB3354 /* Business */,
 				A5A6D88A22B53B1400948AB5 /* AppDelegate.swift */,
-				A5A6D88C22B53B1400948AB5 /* ViewController.swift */,
+				A5A6D88C22B53B1400948AB5 /* MapViewController.swift */,
 				A5A6D88E22B53B1400948AB5 /* Main.storyboard */,
 				A5A6D89122B53B1600948AB5 /* Assets.xcassets */,
 				A5A6D89322B53B1600948AB5 /* LaunchScreen.storyboard */,
@@ -444,7 +444,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A5A6D88D22B53B1400948AB5 /* ViewController.swift in Sources */,
+				A5A6D88D22B53B1400948AB5 /* MapViewController.swift in Sources */,
 				A59888F822B546BC00CB3354 /* Location.swift in Sources */,
 				A59888FA22B549A800CB3354 /* LocationAPI.swift in Sources */,
 				A5A6D88B22B53B1400948AB5 /* AppDelegate.swift in Sources */,
@@ -628,7 +628,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2SURK7LUJC;
 				INFOPLIST_FILE = "Location Workshop/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sundevs.Location-Workshop";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -644,7 +647,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2SURK7LUJC;
 				INFOPLIST_FILE = "Location Workshop/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sundevs.Location-Workshop";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -661,7 +667,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2SURK7LUJC;
 				INFOPLIST_FILE = "Location WorkshopTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sundevs.Location-WorkshopTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -679,7 +689,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2SURK7LUJC;
 				INFOPLIST_FILE = "Location WorkshopTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sundevs.Location-WorkshopTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -696,7 +710,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2SURK7LUJC;
 				INFOPLIST_FILE = "Location WorkshopUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sundevs.Location-WorkshopUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -713,7 +731,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2SURK7LUJC;
 				INFOPLIST_FILE = "Location WorkshopUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sundevs.Location-WorkshopUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

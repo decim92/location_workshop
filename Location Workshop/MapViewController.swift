@@ -10,7 +10,7 @@ import UIKit
 import GoogleMaps
 import CoreLocation
 
-class ViewController: UIViewController {
+class MapViewController: UIViewController {
     @IBOutlet weak var mapView: GMSMapView!
     
     var locationInteractor: LocationInteractor!
@@ -53,7 +53,7 @@ class ViewController: UIViewController {
     
 }
 
-extension ViewController: LocationPresenterDelegate {
+extension MapViewController: LocationPresenterDelegate {
     func presentCurrent(location: Location) {
         self.setCurrentLocationMark(location: location)
         self.locationInteractor.getNearestPointsToCurrentDeviceLocation()
